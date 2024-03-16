@@ -1,4 +1,3 @@
-import React, {useEffect} from 'react';
 import {Link} from "react-router-dom";
 
 import style from "./bodyPost.module.css"
@@ -15,12 +14,6 @@ function BodyPost() {
     function clearIdPost() {
         localStorage.removeItem('postId');
     }
-
-    useEffect(() => {
-        return () => {
-            localStorage.removeItem('postId');
-        };
-    }, []);
 
     return (
         <div className={textContainer}>

@@ -11,6 +11,7 @@ import ButtonAdd from "../../ui/ButtonAdd";
 
 const maxPage:number = 5;
 const {setList, postLi} = styles
+
 function Posts() {
     const [content, setContent] = useState<Post[]>([]);
     const { loadPosts, loading, page } = useLoadPosts(setContent);
